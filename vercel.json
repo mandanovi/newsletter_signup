@@ -6,6 +6,10 @@
         "use": "@now/node"
       }
     ],
+    "buildCommand": "next build",
+    "cleanUrls": false,
+    "devCommand": "next dev",
+    "framework": "nextjs",
     "routes": [
       {
         "src": "/(.*)",
