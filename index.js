@@ -3,7 +3,6 @@ const app=express();
 const bodyParser=require("body-parser");
 const request=require("request");
 const https=require("https");
-const { json } = require("body-parser");
 require("dotenv").config();
 
 
@@ -54,6 +53,8 @@ app.post("/", function(req, res) {
         
     })
     
+    request.write(jsonData);
+    request.end();
 
 })
 
